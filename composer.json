@@ -1,0 +1,17 @@
+{
+    "name": "drips/form",
+    "description": "Formularsystem basierend auf PHP",
+    "keywords": ["form", "forms"],
+    "license": "MIT",
+    "require": {
+
+    },
+    "suggest": {
+        "drips/orm": "Ermöglicht das binden von Models an Formulare"
+    },
+    "autoload": {
+        "psr-4": {
+            "Drips\\Form\\": "src"
+        }
+    }
+}
