@@ -4,10 +4,10 @@
     "keywords": ["form", "forms"],
     "license": "MIT",
     "require": {
-
+        "drips/mvc": "^0.1"
     },
     "suggest": {
-        "drips/orm": "Ermöglicht das binden von Models an Formulare"
+        "drips/orm": "Ermöglicht das binden von Entities an Formulare"
     },
     "autoload": {
         "psr-4": {
