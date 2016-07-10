@@ -3,9 +3,6 @@
     "description": "Formularsystem basierend auf PHP",
     "keywords": ["form", "forms"],
     "license": "MIT",
-    "require-dev": {
-        "drips/mvc": "dev-master"
-    },
     "autoload": {
         "psr-4": {
             "Drips\\Form\\": "src"
