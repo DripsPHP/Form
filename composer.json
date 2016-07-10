@@ -10,7 +10,7 @@
         "psr-4": {
             "Drips\\Form\\": "src"
         },
-        "files": ["src/viewplugin.php"]
+        "files": ["src/viewplugin.php", "src/functions.php"]
     },
     "minimum-stability": "dev"
 }

@@ -9,7 +9,6 @@ class FormController extends Controller
 {
     public function getAction()
     {
-
         return $this->view->display("view.tpl");
     }
 
@@ -17,15 +16,21 @@ class FormController extends Controller
     {
         //$entity = new Entity;
         //$entity->fromArray($request->post);
-
-
+        $this->request->flashData();
+        $result = 'false';
+        if(checkCsrf()){
+            $this->request->session->flash('success', true);
+            $result = 'true';
+        }
         if(stripos($this->request->server["HTTP_ACCEPT"], "text/html") !== false){
             // Formular ausgeben
             echo "HTML";
         } else {
             // JSON
-            echo "{}";
+            echo "{Result: $result}";
         }
+        header("Location: ./");
+        exit();
     }
 }
 
