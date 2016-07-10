@@ -4,14 +4,13 @@
     "keywords": ["form", "forms"],
     "license": "MIT",
     "require": {
-        "drips/mvc": "^0.1"
-    },
-    "suggest": {
-        "drips/orm": "Ermöglicht das binden von Entities an Formulare"
+        "drips/mvc": "dev-master"
     },
     "autoload": {
         "psr-4": {
             "Drips\\Form\\": "src"
-        }
-    }
+        },
+        "files": ["src/viewplugin.php"]
+    },
+    "minimum-stability": "dev"
 }
