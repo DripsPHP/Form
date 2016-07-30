@@ -1,13 +1,21 @@
 {
-    "name": "drips/form",
-    "description": "Formularsystem basierend auf PHP",
-    "keywords": ["form", "forms"],
-    "license": "MIT",
-    "autoload": {
-        "psr-4": {
-            "Drips\\Form\\": "src"
-        },
-        "files": ["src/viewplugin.php", "src/functions.php"]
+  "name": "drips/form",
+  "description": "Formularsystem basierend auf PHP",
+  "keywords": [
+    "form",
+    "forms"
+  ],
+  "license": "MIT",
+  "autoload": {
+    "psr-4": {
+      "Drips\\Form\\": "src"
     },
-    "minimum-stability": "dev"
+    "files": [
+      "src/viewplugin.php",
+      "src/functions.php"
+    ]
+  },
+  "require": {
+    "drips/mvc": "^1.0"
+  }
 }
