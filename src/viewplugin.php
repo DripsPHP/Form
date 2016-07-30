@@ -3,6 +3,19 @@
 use Drips\HTTP\Request;
 use Drips\MVC\View;
 
+/**
+ * Ermöglicht die Verwendung von {form}{/form}
+ * Funktioniert exakt gleich wie ein gewöhnliches <form> hat jedoch zusätzliche Funktionalität wie z.B.: unterschiedliche
+ * Request-Methoden (get, post, delete, patch, put).
+ * Zusätzlich wird ein CSRF-Token generiert und mitgeschickt.
+ *
+ * @param $params
+ * @param $content
+ * @param $template
+ * @param $repeat
+ *
+ * @return string
+ */
 function formblockPlugin($params, $content, $template, &$repeat)
 {
     if (!$repeat) {

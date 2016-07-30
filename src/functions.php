@@ -2,6 +2,14 @@
 
 use Drips\HTTP\Request;
 
+/**
+ * Liefert den alten Wert eines Eingabefeldes oder den übergebenen Standardwert.
+ *
+ * @param $name
+ * @param null $default
+ *
+ * @return string|null
+ */
 function value($name, $default = null)
 {
     $request = Request::getInstance();
@@ -12,6 +20,11 @@ function value($name, $default = null)
     return $default;
 }
 
+/**
+ * Dient zur Vorbeugung von CSRF. Überprüft automatisch das CSRF-Token und ob dieses gültig ist.
+ *
+ * @return bool
+ */
 function checkCsrf()
 {
     $request = Request::getInstance();
