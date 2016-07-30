@@ -5,7 +5,7 @@
 [![Test Coverage](https://codeclimate.com/github/Prowect/Form/badges/coverage.svg)](https://codeclimate.com/github/Prowect/Form/coverage)
 [![Latest Release](https://img.shields.io/packagist/v/drips/Form.svg)](https://packagist.org/packages/drips/form)
  
-Formulare können in ganz normalen HTML-Code erzeugt werden. Der einzige Unterschied besteht darin, dass das `<form>` wie folgt geschrieben wird `{form}`. Der Grund dafür ist, dass man bei einem gewöhnlichen HTML-Formular lediglich GET- und POST-Requests absetzen kann. Bei der verbesserten Variante von Drips sind auch andere Request-Methoden möglich, wie z.B.: DELETE.
+Formulare können in ganz normalem HTML-Code erzeugt werden. Der einzige Unterschied besteht darin, dass das `<form>` wie folgt geschrieben wird `{form}`. Der Grund dafür ist, dass man bei einem gewöhnlichen HTML-Formular lediglich GET- und POST-Requests absetzen kann. Bei der verbesserten Variante von Drips sind auch andere Request-Methoden möglich, wie z.B.: DELETE.
 
 ```smarty
 {form action='/user/1' method='delete'}
